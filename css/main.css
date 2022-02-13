@@ -67,12 +67,21 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1320px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.section {
+  padding-top: 85px;
+  padding-bottom: 85px;
 }
 
 .indent {
@@ -96,6 +105,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  margin-bottom: 50px;
 
   color: var(--primary-txt-cl);
 }
@@ -171,7 +181,6 @@ p {
 
 .hero {
   padding-top: 10px;
-  padding-bottom: 170px;
 }
 
 .hero-container {
@@ -208,4 +217,30 @@ p {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--primary-txt-cl);
+}
+
+.hero-img {
+  margin-right: -110px;
+}
+
+/* ====design==== */
+.design-container {
+  display: flex;
+}
+
+.design-text-container {
+  margin-left: auto;
+  width: 565px;
+}
+
+.design-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.design-title {
+  margin-bottom: 20px;
+}
+
+.design-img {
+  margin-left: -80px;
 }
