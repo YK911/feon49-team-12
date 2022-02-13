@@ -1,41 +1,41 @@
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../font/Gilroy-Regular.eot');
-  src: local('Gilroy Regular'), local('Gilroy-Regular'),
-    url('../font/Gilroy-RegularItalic.eot') format('embedded-opentype'),
-    url('../font/Gilroy-Regular.woff') format('woff'),
-    url('../font/Gilroy-Regular.woff2') format('woff2'),
-    url('../font/Gilroy-Regular.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../font/Gilroy-RegularItalic.eot") format("embedded-opentype"),
+    url("../font/Gilroy-Regular.woff") format("woff"),
+    url("../font/Gilroy-Regular.woff2") format("woff2"),
+    url("../font/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../font/Gilroy-Semibold.eot');
-  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
-    url('../font/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
-    url('../font/Gilroy-Semibold.woff2') format('woff2'),
-    url('../font/Gilroy-Semibold.woff') format('woff'),
-    url('../font/Gilroy-Semibold.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("../font/Gilroy-Semibold.eot");
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+    url("../font/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Gilroy-Semibold.woff2") format("woff2"),
+    url("../font/Gilroy-Semibold.woff") format("woff"),
+    url("../font/Gilroy-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../font/Roboto-Regular.eot');
-  src: local('Roboto Regular'), local('Roboto-Regular'),
-    url('../font/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.eot");
+  src: local("Roboto Regular"), local("Roboto-Regular"),
+    url("../font/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --main-font: 'Gilroy', sans-serif;
+  --main-font: "Gilroy", sans-serif;
 
   --accent-cl: #df3d3a;
 
@@ -73,6 +73,10 @@ p {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.indent {
+  display: block;
 }
 
 .list {
@@ -161,4 +165,47 @@ p {
   padding-top: 64px;
   padding-bottom: 64px;
   display: block;
+}
+
+/* ======= HERO ===== */
+
+.hero {
+  padding-top: 10px;
+  padding-bottom: 170px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-wrapper {
+  width: 320px;
+  margin-bottom: 110px;
+}
+
+.hero-text {
+  font-size: 16px;
+  margin-bottom: 36px;
+}
+
+.hero-text:last-child {
+  margin-bottom: 0px;
+}
+
+.hero-lead {
+  width: 470px;
+  margin-left: 104px;
+}
+
+.hero-title {
+  margin-bottom: 80px;
+
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--primary-txt-cl);
 }
